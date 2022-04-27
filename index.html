@@ -1,1 +1,112 @@
-Hello world Mazer fuker !
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOH</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .head{
+            background:rgb(0, 32, 88);
+           height:900px;
+        }
+        img{
+            width:180px;
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .tit{
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            font-family: monospace;
+            font-size:33px;
+            color: white;
+        }
+        #username{
+            display: block;
+            margin: auto;
+            width:250px;
+            margin-top: 20px;
+            height:30px;
+            padding-left: 10px;
+            border-radius: 3px;
+            background: white;
+           outline: none;
+            border: 3px solid rgb(149, 149, 149);
+        }
+        .btn{
+            display: block;
+            margin: auto;
+            text-align: center;
+            width:150px;
+            height:33px;
+            margin-top: 20px;
+            color: white;
+            border: 0px;
+            border-radius: 4px;
+            background: rgb(65, 141, 255);
+        }
+        .title{
+            display: block;
+            margin: auto;
+            text-align: center;
+            width: 300px;
+            margin-top:50px;
+            color: white;
+            font-family:arial;
+            font-size: 12px;
+        }
+        #load{
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top:30px;
+            color: white;
+            font-family:Arial;         
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <br><br>
+    <img src="https://cdn-icons-png.flaticon.com/512/2165/2165674.png" alt="">
+   <h1 class="tit">Bзлом Инстаграм</h1>
+   <input type="text" id="username" placeholder="Введите имя пользователя">
+   <button class="btn" onclick="hack()">
+    ВЗЛОМА́ТЬ
+   </button>
+ <h2 id="load"></h2>
+   <br><br><br><br>
+   <p class="title">
+    Фишинг — одна из разновидностей социальной инженерии, основанная на незнании пользователями основ сетевой безопасности: в частности, многие не знают простого факта: сервисы не рассылают писем с просьбами сообщить свои учётные данные, пароль и прочее.
+   </p>
+   </div>
+</body>
+<script>
+    var s=0;
+    function loading(){
+        s++;
+        if(s==100){
+            swal("Успешный взлом!", "", "success");
+           document.getElementById('load').style.display="none";
+        }
+        document.getElementById('load').innerHTML=s+'%';
+    }
+function hack(){
+    var st=setInterval(()=>{
+         loading()
+     },170)
+}
+
+</script>
+</html>
